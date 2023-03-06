@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TITLE</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<a href="#">
+			<img src="img/new_logo.png" alt="" class="logo">
+			<img src="img/only logo.png" alt="logo" class="only_logo">
+		</a>
+		<a href="tel:+79162061460" class="phone_number">+7(916)206-14-60</a>
+		<div class="navbar">
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<div class="menu-items">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">blogs</a></li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">contact</a></li>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<a href="#">
+				<li>ГЛАВНАЯ</li>
+			</a>
+			<a href="#">
+				<li>ОБЪЕКТЫ</li>
+			</a>
+			<a href="#">
+				<li>О НАС</li>
+			</a>
+			<a href="#">
+				<li>КОНТАКТЫ</li>
+			</a>
+		</ul>
+	</nav>
+	<main>
+		<aside>
+			<div class="sideblock">
+				<h2>Избранное</h2>
+				<ul>
+					<li><a href="">Lorem, ipsum dolor.</a></li>
+					<li><a href="">Quae, ut totam!</a></li>
+					<li><a href="">Nobis, ex vel.</a></li>
+					<li><a href="">Atque, provident modi?</a></li>
+					<li><a href="">Aliquid, doloremque hic.</a></li>
+					<li><a href="">Beatae, velit modi.</a></li>
+					<li><a href="">Provident, facilis quas.</a></li>
+					<li><a href="">Lorem, ipsum dolor.</a></li>
+					<li><a href="">Quae, ut totam!</a></li>
+					<li><a href="">Nobis, ex vel.</a></li>
+					<li><a href="">Atque, provident modi?</a></li>
+					<li><a href="">Aliquid, doloremque hic.</a></li>
+					<li><a href="">Beatae, velit modi.</a></li>
+					<li><a href="">Provident, facilis quas.</a></li>
+					<li><a href="">Lorem, ipsum dolor.</a></li>
+					<li><a href="">Quae, ut totam!</a></li>
+					<li><a href="">Nobis, ex vel.</a></li>
+					<li><a href="">Atque, provident modi?</a></li>
+					<li><a href="">Aliquid, doloremque hic.</a></li>
+					<li><a href="">Beatae, velit modi.</a></li>
+					<li><a href="">Provident, facilis quas.</a></li>
+					<li><a href="">Lorem, ipsum dolor.</a></li>
+					<li><a href="">Quae, ut totam!</a></li>
+					<li><a href="">Nobis, ex vel.</a></li>
+					<li><a href="">Atque, provident modi?</a></li>
+					<li><a href="">Aliquid, doloremque hic.</a></li>
+					<li><a href="">Beatae, velit modi.</a></li>
+					<li><a href="">Provident, facilis quas.</a></li>
+				</ul>
+			</div>
+		</aside>
+		<div class="search-wrap">
+			<h1>Поиск недвижимости по заданным параметрам</h1>
+
+			<h1 class="decor decor_small">Поиск недвижимости Севастополя по заданным параметрам:</h1>
+			<form name="searchform" id="searchform" class="bootstrap-form" method="GET" action="/objects/">
+				<div class="flex-columns top-align row-wrap">
+					<fieldset class="default-flex-fieldset w1of3">
+						<label for="obj_room_count">Комнат:</label>
+						<select multiple="" name="obj_room_count[]" id="obj_room_count" class="select-designed w-full"
+							data-placeholder="Выберите число комнат ..." style="display: none;">
+							<option value="NULL"></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+						</select>
+						<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+							id="obj_room_count_chosen" style="width: 223px;">
+							<ul class="chosen-choices">
+								<li class="search-field">
+									<input class="chosen-search-input default" type="text" autocomplete="off"
+										value="Выберите число комнат ..." style="width: 183px;">
+								</li>
+							</ul>
+							<div class="chosen-drop">
+								<ul class="chosen-results"></ul>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="default-flex-fieldset w1of3">
+						<label for="state_id">Вид объекта:</label>
+						<select multiple="" name="state_id[]" id="state_id" class="select-designed w-full"
+							data-placeholder="Выберите вид объекта ..." style="display: none;">
+							<option value="NULL"></option>
+							<option value="2">Вторичка</option>
+							<option value="1">Новострой</option>
+						</select>
+						<div class="chosen-container chosen-container-multi select-designed w-full" title="" id="state_id_chosen"
+							style="width: 223px;">
+							<ul class="chosen-choices">
+								<li class="search-field">
+									<input class="chosen-search-input default" type="text" autocomplete="off"
+										value="Выберите вид объекта ..." style="width: 176px;">
+								</li>
+							</ul>
+							<div class="chosen-drop">
+								<ul class="chosen-results"></ul>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="default-flex-fieldset w1of3">
+						<label>S<sub>общая</sub> (м<sup>2</sup>):</label>
+						<div class="group-controls inline-group">
+							<label for="obj_square_total_lo" class="controls-label">от</label>
+							<input name="obj_square_total_lo" id="obj_square_total_lo" type="text" class="w60" value="">
+							<label for="obj_square_total_hi" class="controls-label">до</label>
+							<input name="obj_square_total_hi" id="obj_square_total_hi" type="text" class="w60" value="">
+						</div>
+					</fieldset>
+					<fieldset class="default-flex-fieldset w1of3">
+						<label>Этаж:</label>
+						<div class="group-controls inline-group">
+							<label for="obj_floor_lo" class="controls-label">от</label>
+							<input name="obj_floor_lo" id="obj_floor_lo" type="text" class="w40" value="">
+							<label for="obj_floor_hi" class="controls-label">до</label>
+							<input name="obj_floor_hi" id="obj_floor_hi" type="text" class="w40" value="">
+							<div class="checkbox-group group-controls column-group">
+								<label class="checkbox">
+									<input type="checkbox" name="obj_floor_notmin" id="obj_floor_notmin"> не первый
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" name="obj_floor_notmax" id="obj_floor_notmax"> не последний
+								</label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="default-flex-fieldset w1of3">
+						<label>Этажность:</label>
+						<div class="group-controls inline-group">
+							<label for="house_floornumber_lo" class="controls-label">от</label>
+							<input name="house_floornumber_lo" id="house_floornumber_lo" type="text" class="w40" value="">
+							<label for="house_floornumber_hi" class="controls-label">до</label>
+							<input name="house_floornumber_hi" id="house_floornumber_hi" type="text" class="w40" value="">
+						</div>
+					</fieldset>
+					<fieldset class="default-flex-fieldset w1of3">
+						<label>Цена:</label>
+						<div class="group-controls inline-group">
+							<label for="obj_price" class="controls-label">до</label>
+							<input name="obj_price" id="obj_price" type="text" class="smalltext form-control w60" value="">
+							<label for="obj_currency" class="controls-label">в</label>
+							<select name="obj_currency" id="obj_currency" class="chosen select-designed w80" style="display: none;">
+								<option value="RUR">РУБ</option>
+								<option value="USD">USD</option>
+							</select>
+							<div class="chosen-container chosen-container-single chosen select-designed w80" title=""
+								id="obj_currency_chosen" style="width: 80px;"><a class="chosen-single">
+									<span>РУБ</span>
+									<div><b></b></div>
+								</a>
+								<div class="chosen-drop">
+									<div class="chosen-search">
+										<input class="chosen-search-input" type="text" autocomplete="off">
+									</div>
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="adv-form-part">
+					<div class="flex-columns top-align row-wrap">
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="project_id">Проект:</label>
+							<select multiple="" name="project_id[]" id="project_id" class="select-designed w-full"
+								data-placeholder="Выберите проект ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="7">Брежневская планировка</option>
+								<option value="10">Галерейная планировка</option>
+								<option value="63">Дореволюционная планировка</option>
+								<option value="3">Индивидуальная планировка</option>
+								<option value="8">Малосемейная планировака</option>
+								<option value="9">Общежитие</option>
+								<option value="1">Современная планировка</option>
+								<option value="5">Сталинская планировка</option>
+								<option value="2">Улучшенная планировка</option>
+								<option value="6">Хрущевская планировка</option>
+								<option value="4">Чешская планировка</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="project_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите проект ..." style="width: 142px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="heating_id">Отопление:</label>
+							<select multiple="" name="heating_id[]" id="heating_id" class="select-designed w-full"
+								data-placeholder="Выберите вид отопления ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="10">Дизельный котёл</option>
+								<option value="3">Индивидуальная котельная</option>
+								<option value="2">Индивидуальное (газовый котел)</option>
+								<option value="6">Индивидуальное (твердотопливный котел)</option>
+								<option value="4">Индивидуальное (электрический котел)</option>
+								<option value="5">Отсутствует</option>
+								<option value="7">Печное</option>
+								<option value="8">Тёплый пол </option>
+								<option value="1">Центральное</option>
+								<option value="9">Электроконвектор</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="heating_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите вид отопления ..." style="width: 190px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="hotwater_id">Горячее водоснабжение:</label>
+							<select multiple="" name="hotwater_id[]" id="hotwater_id" class="select-designed w-full"
+								data-placeholder="Выберите вид горячего водоснабжения ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="4">Бойлер</option>
+								<option value="3">Газовая колонка</option>
+								<option value="2">Газовый котел</option>
+								<option value="5">Отсутствует</option>
+								<option value="1">Центральное</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="hotwater_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите вид горячего водоснабжения ..." style="width: 213px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="property_id">Вид собственности:</label>
+							<select multiple="" name="property_id[]" id="property_id" class="select-designed w-full"
+								data-placeholder="Выберите вид собственности ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="2">Пай</option>
+								<option value="1">Собственность</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="property_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите вид собственности ..." style="width: 213px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="repair_id">Ремонт:</label>
+							<select multiple="" name="repair_id[]" id="repair_id" class="select-designed w-full"
+								data-placeholder="Выберите тип ремонта ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="5">Без отделки</option>
+								<option value="3">Без ремонта</option>
+								<option value="2">Дизайнерский ремонт</option>
+								<option value="1">Евро ремонт</option>
+								<option value="6">Косметический ремонт</option>
+								<option value="7">Неполный ремонт</option>
+								<option value="4">Хороший ремонт</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title="" id="repair_id_chosen"
+								style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите тип ремонта ..." style="width: 175px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<!--
+											<label for="change_id">Перепланировка:</label>
+											<select multiple name='change_id[]' id='change_id' class='select-designed w-full' data-placeholder="Выберите перепланировку ...">
+													<option value=NULL></option>
+																							</select>
+	-->
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1">
+							<label for="city_id">Адрес:</label>
+							<div class="group-controls inline-group space-between">
+								<select name="city_id" id="city_id" class="select-designed w25p" style="display: none;">
+									<option value="1">Севастополь</option>
+									<option value="2">Симферополь</option>
+									<option value="3">Алушта</option>
+									<option value="4">Ялта</option>
+									<option value="5">Судак</option>
+									<option value="6">Бахчисарай</option>
+									<option value="7">Саки</option>
+								</select>
+								<div
+									class="chosen-container chosen-container-single select-designed w25p chosen-container-single-nosearch"
+									title="" id="city_id_chosen" style="width: 172px;"><a class="chosen-single">
+										<span>Севастополь</span>
+										<div><b></b></div>
+									</a>
+									<div class="chosen-drop">
+										<div class="chosen-search">
+											<input class="chosen-search-input" type="text" autocomplete="off" readonly="">
+										</div>
+										<ul class="chosen-results"></ul>
+									</div>
+								</div>
+								<select multiple="" name="district_id[]" id="district_id" class="select-designed w25p"
+									data-placeholder="Выберите район ..." style="display: none;">
+									<option value="NULL"></option>
+									<option value="4">Балаклавский район</option>
+									<option value="2">Гагаринский район</option>
+									<option value="1">Нахимовский район</option>
+									<option value="5">Ленинский район</option>
+									<option value="6">Ласпи квартал</option>
+									<option value="40">Верхнесадовое село</option>
+									<option value="47">Кача пгт</option>
+									<option value="45">Инкерман город</option>
+									<option value="38">Андреевка село</option>
+									<option value="41">Вишневое село</option>
+									<option value="42">Гончарное село</option>
+									<option value="44">Дальнее село</option>
+									<option value="46">Камышлы село</option>
+									<option value="48">Кизиловое село</option>
+									<option value="85">Любимовка поселок</option>
+									<option value="83">Мекензиевы горы</option>
+									<option value="52">Новобобровское село</option>
+									<option value="54">Озерное село</option>
+									<option value="55">Орлиное село</option>
+									<option value="56">Орловка село</option>
+									<option value="57">Осипенко село</option>
+									<option value="58">Павловка село</option>
+									<option value="59">Первомайка село</option>
+									<option value="60">Передовое село</option>
+									<option value="61">Пироговка село</option>
+									<option value="62">Поворотное село</option>
+									<option value="64">Полюшко село</option>
+									<option value="66">Резервное село</option>
+									<option value="67">Родниковское село</option>
+									<option value="68">Родное село</option>
+									<option value="69">Россошанка село</option>
+									<option value="84">Сахарная головка</option>
+									<option value="70">Солнечный поселок</option>
+									<option value="71">Терновка село</option>
+									<option value="72">Тыловое село</option>
+									<option value="74">Флотское село</option>
+									<option value="75">Фронтовое село</option>
+									<option value="76">Фруктовое село</option>
+									<option value="78">Хмельницкое село</option>
+									<option value="79">Черноречье село</option>
+									<option value="80">Широкое село</option>
+									<option value="81">Штурмовое село</option>
+									<option value="90">Песчаное село</option>
+								</select>
+								<div class="chosen-container chosen-container-multi select-designed w25p" title=""
+									id="district_id_chosen" style="width: 172px;">
+									<ul class="chosen-choices">
+										<li class="search-field">
+											<input class="chosen-search-input default" type="text" autocomplete="off"
+												value="Выберите район ..." style="width: 138px;">
+										</li>
+									</ul>
+									<div class="chosen-drop">
+										<ul class="chosen-results"></ul>
+									</div>
+								</div>
+								<select multiple="" name="street_id[]" id="street_id" class="select-designed w25p"
+									data-placeholder="Выберите улицу ..." style="display: none;">
+									<option value="NULL"></option>
+									<option value="815">1-го Мая площадь (Балаклавский район)</option>
+									<option value="386">40-летия Октября улица (Балаклавский район)</option>
+									<option value="162">7-го Ноября улица (Балаклавский район)</option>
+									<option value="387">Аксютина улица (Балаклавский район)</option>
+									<option value="1165">Альпийский 1 переулок (Балаклавский район)</option>
+									<option value="623">Баркасная улица (Балаклавский район)</option>
+									<option value="388">Башенная улица (Балаклавский район)</option>
+									<option value="389">Благодатная улица (Балаклавский район)</option>
+									<option value="585">Веерная улица (Балаклавский район)</option>
+									<option value="612">Веселая улица (Балаклавский район)</option>
+									<option value="1056">Вечерняя улица (Балаклавский район)</option>
+									<option value="165">Водопроводный переулок (Балаклавский район)</option>
+									<option value="719">Воркова Сергея улица (Балаклавский район)</option>
+									<option value="390">Воровского улица (Балаклавский район)</option>
+									<option value="1163">Восьмая линия (Балаклавский район)</option>
+									<option value="852">Выгонная улица (Балаклавский район)</option>
+									<option value="855">Гидронавтов бульвар (Балаклавский район)</option>
+									<option value="391">Грошева улица (Балаклавский район)</option>
+									<option value="708">Гузенко Юлии улица (Балаклавский район)</option>
+									<option value="643">Дионисная улица (Балаклавский район)</option>
+									<option value="988">Докина Вадима улица (Балаклавский район)</option>
+									<option value="393">Драпушко улица (Балаклавский район)</option>
+									<option value="167">Жукова Василия улица (Балаклавский район)</option>
+									<option value="628">Земкова Александра улица (Балаклавский район)</option>
+									<option value="751">Историческая улица (Балаклавский район)</option>
+									<option value="395">Калича улица (Балаклавский район)</option>
+									<option value="580">Квартальный проезд (Балаклавский район)</option>
+									<option value="397">Кирова улица (Балаклавский район)</option>
+									<option value="1146">Кологривова Михаила улица (Балаклавский район)</option>
+									<option value="924">Комдива Ласкина (Балаклавский район)</option>
+									<option value="401">Коммунаров улица (Балаклавский район)</option>
+									<option value="523">Композиторская улица (Балаклавский район)</option>
+									<option value="680">Конструкторов улица (Балаклавский район)</option>
+									<option value="1172">Краснознаменная улица (Балаклавский район)</option>
+									<option value="402">Крестовского улица (Балаклавский район)</option>
+									<option value="1034">Марченко Ивана улица (Балаклавский район)</option>
+									<option value="980">Междурядная улица (Балаклавский район)</option>
+									<option value="730">Милосердная улица (Балаклавский район)</option>
+									<option value="407">Мира улица (Балаклавский район)</option>
+									<option value="408">Молодогвардейцев улица (Балаклавский район)</option>
+									<option value="786">Монастырское шоссе (Балаклавский район)</option>
+									<option value="409">Морской пехоты улица (Балаклавский район)</option>
+									<option value="1050">Москаленко Георгия улица (Балаклавский район)</option>
+									<option value="1313">Мускатная улица (Балаклавский район)</option>
+									<option value="631">Мыса Георгия улица (Балаклавский район)</option>
+									<option value="410">Назукина набережная (Балаклавский район)</option>
+									<option value="411">Невская улица (Балаклавский район)</option>
+									<option value="552">Новикова переулок (Балаклавский район)</option>
+									<option value="178">Новикова улица (Балаклавский район)</option>
+									<option value="665">Персиковая улица (Балаклавский район)</option>
+									<option value="1074">Пограничная улица (Балаклавский район)</option>
+									<option value="594">Предместная улица (Балаклавский район)</option>
+									<option value="1211">Радарное шоссе (Балаклавский район)</option>
+									<option value="416">Ракетная улица (Балаклавский район)</option>
+									<option value="184">Рубцова Герасима улица (Балаклавский район)</option>
+									<option value="417">Рудничный переулок (Балаклавский район)</option>
+									<option value="903">садовое товарищество "Успех" (Балаклавский район)</option>
+									<option value="185">Сапунгорская улица (Балаклавский район)</option>
+									<option value="1193">Севастопольская зона ЮБК бухта Ласпи "Лазурный Батилиман" (Балаклавский район)
+									</option>
+									<option value="418">Северная улица (Балаклавский район)</option>
+									<option value="718">Склонная улица (Балаклавский район)</option>
+									<option value="544">Снайперская улица (Балаклавский район)</option>
+									<option value="1046">СНТ Весна (Балаклавский район)</option>
+									<option value="1318">СНТ Технолог (Балаклавский район)</option>
+									<option value="421">Солнечная улица (Балаклавский район)</option>
+									<option value="777">СТ Волна (Балаклавский район)</option>
+									<option value="833">СТ Гераклея (Балаклавский район)</option>
+									<option value="649">СТ Дельфин (Балаклавский район)</option>
+									<option value="925">СТ Дионис (Балаклавский район)</option>
+									<option value="1341">СТ Медик (Балаклавский район)</option>
+									<option value="766">СТ Надежда-2 (Балаклавский район)</option>
+									<option value="840">СТ Овощевод (Балаклавский район)</option>
+									<option value="1250">СТ Первомайское-1 (Балаклавский район)</option>
+									<option value="1110">СТ Рубин (Балаклавский район)</option>
+									<option value="771">СТ Технолог, Жемчужная улица (Балаклавский район)</option>
+									<option value="768">СТ Труженник (Балаклавский район)</option>
+									<option value="729">СТ Эврика (Балаклавский район)</option>
+									<option value="422">Строительная улица (Балаклавский район)</option>
+									<option value="188">Терлецкого Александра улица (Балаклавский район)</option>
+									<option value="778">ТСН Икар (Балаклавский район)</option>
+									<option value="740">ТСН Родник (Балаклавский район)</option>
+									<option value="1186">ТСН СТ Фиолент (Балаклавский район)</option>
+									<option value="896">ТСН Черноморец (Балаклавский район)</option>
+									<option value="1206">Узорная 1 улица (Балаклавский район)</option>
+									<option value="423">Урицкого улица (Балаклавский район)</option>
+									<option value="425">Физкультурная улица (Балаклавский район)</option>
+									<option value="190">Физкультурный переулок (Балаклавский район)</option>
+									<option value="1337">Фонтанный переулок (Балаклавский район)</option>
+									<option value="427">Хмельницкого Богдана улица (Балаклавский район)</option>
+									<option value="1352">Хризолитовая улица (Балаклавский район)</option>
+									<option value="669">Цветочная улица (Балаклавский район)</option>
+									<option value="828">Чакряна Арутюна улица (Балаклавский район)</option>
+									<option value="194">50-летия СССР площадь (Гагаринский район)</option>
+									<option value="1123">Авиаторов улица (Гагаринский район)</option>
+									<option value="820">Айвовый 1 переулок (Гагаринский район)</option>
+									<option value="839">Айвовый 4 переулок (Гагаринский район)</option>
+									<option value="1109">Академическая улица (Гагаринский район)</option>
+									<option value="1252">Академический 2 переулок (Гагаринский район)</option>
+									<option value="779">Амет-Хана Султана улица (Гагаринский район)</option>
+									<option value="195">Античный проспект (Гагаринский район)</option>
+									<option value="546">Аргонавтов улица (Гагаринский район)</option>
+									<option value="866">Астапова аллея (Гагаринский район)</option>
+									<option value="942">Бабковой Людмилы улица (Гагаринский район)</option>
+									<option value="857">Белозерова Ивана улица (Гагаринский район)</option>
+									<option value="198">Блюхера Василия улица (Гагаринский район)</option>
+									<option value="783">Бобковой Людмилы улица (Гагаринский район)</option>
+									<option value="967">Борисова улица (Гагаринский район)</option>
+									<option value="629">Босфорская улица (Гагаринский район)</option>
+									<option value="199">Вакуленчука улица (Гагаринский район)</option>
+									<option value="1085">Вербеновый проезд (Гагаринский район)</option>
+									<option value="709">Византийская улица (Гагаринский район)</option>
+									<option value="200">Военных Строителей улица (Гагаринский район)</option>
+									<option value="642">Волнистая улица (Гагаринский район)</option>
+									<option value="201">Восточная улица (Гагаринский район)</option>
+									<option value="202">Гавена улица (Гагаринский район)</option>
+									<option value="203">Гагарина Юрия проспект (Гагаринский район)</option>
+									<option value="586">Генуэзская улица (Гагаринский район)</option>
+									<option value="204">Героев Бреста улица (Гагаринский район)</option>
+									<option value="205">Героев Подводников улица (Гагаринский район)</option>
+									<option value="206">Героев Сталинграда проспект (Гагаринский район)</option>
+									<option value="210">Готская улица (Гагаринский район)</option>
+									<option value="211">Готский проезд (Гагаринский район)</option>
+									<option value="685">Диагональная 1 улица (Гагаринский район)</option>
+									<option value="384">Древняя улица (Гагаринский район)</option>
+									<option value="212">Дыбенко Павла улица (Гагаринский район)</option>
+									<option value="213">Ерошенко улица (Гагаринский район)</option>
+									<option value="214">Ефремова улица (Гагаринский район)</option>
+									<option value="1219">Жасминная улица (Гагаринский район)</option>
+									<option value="599">Западный берег Камышовой бухты улица (Гагаринский район)</option>
+									<option value="618">Защитников 35-й батареи аллея (Гагаринский район)</option>
+									<option value="555">Ирисовая улица (Гагаринский район)</option>
+									<option value="215">Казачья улица (Гагаринский район)</option>
+									<option value="216">Камышовое шоссе (Гагаринский район)</option>
+									<option value="596">Кедрина улица (Гагаринский район)</option>
+									<option value="217">Кесаева Астана улица (Гагаринский район)</option>
+									<option value="610">Клеверная улица (Гагаринский район)</option>
+									<option value="919">Ковыльный переулок (Гагаринский район)</option>
+									<option value="1118">Колобова проезд (Гагаринский район)</option>
+									<option value="219">Колобова улица (Гагаринский район)</option>
+									<option value="549">Коралловая улица (Гагаринский район)</option>
+									<option value="220">Корчагина Павла улица (Гагаринский район)</option>
+									<option value="221">Косарева улица (Гагаринский район)</option>
+									<option value="222">Космодемьянской Зои улица (Гагаринский район)</option>
+									<option value="632">Крайняя улица (Гагаринский район)</option>
+									<option value="554">Красивая улица (Гагаринский район)</option>
+									<option value="1297">Краснодонцев улица (Гагаринский район)</option>
+									<option value="223">Крепостное шоссе (Гагаринский район)</option>
+									<option value="572">Крупской улица (Гагаринский район)</option>
+									<option value="224">Крылова маршала улица (Гагаринский район)</option>
+									<option value="749">Лавандовый проезд (Гагаринский район)</option>
+									<option value="668">Лесхозная улица (Гагаринский район)</option>
+									<option value="225">Летчиков улица (Гагаринский район)</option>
+									<option value="226">Лиговская улица (Гагаринский район)</option>
+									<option value="1292">Манганари братьев улица (Гагаринский район)</option>
+									<option value="227">Маринеско Александра улица (Гагаринский район)</option>
+									<option value="562">Марсовая улица (Гагаринский район)</option>
+									<option value="1339">Мартовская (Гагаринский район)</option>
+									<option value="228">Маячная улица (Гагаринский район)</option>
+									<option value="230">Меньшикова улица (Гагаринский район)</option>
+									<option value="946">Митридатская улица (Гагаринский район)</option>
+									<option value="231">Михайлова Бориса улица (Гагаринский район)</option>
+									<option value="232">Молодых Строителей улица (Гагаринский район)</option>
+									<option value="560">Монастырское шоссе (Гагаринский район)</option>
+									<option value="591">Муссонная улица (Гагаринский район)</option>
+									<option value="233">Октябрьской Революции проспект (Гагаринский район)</option>
+									<option value="895">Олимпийская улица (Гагаринский район)</option>
+									<option value="534">Омега улица (Гагаринский район)</option>
+									<option value="699">Опрятный переулок (Гагаринский район)</option>
+									<option value="234">Островской Надежды улица (Гагаринский район)</option>
+									<option value="1090">Отрадная улица (Гагаринский район)</option>
+									<option value="935">Парк Победы набережная (Гагаринский район)</option>
+									<option value="236">Парковая улица (Гагаринский район)</option>
+									<option value="620">Первозванного Андрея набережная (Гагаринский район)</option>
+									<option value="1059">Планерная улица (Гагаринский район)</option>
+									<option value="1226">Пляж Омега (Гагаринский район)</option>
+									<option value="659">Поженяна Григория улица (Гагаринский район)</option>
+									<option value="582">Поливановой Марии улица (Гагаринский район)</option>
+									<option value="239">Потапова комбрига улица (Гагаринский район)</option>
+									<option value="240">Правды улица (Гагаринский район)</option>
+									<option value="241">Пролетарская улица (Гагаринский район)</option>
+									<option value="1099">Пятницкого хутор (Гагаринский район)</option>
+									<option value="242">Репина улица (Гагаринский район)</option>
+									<option value="243">Рубежная улица (Гагаринский район)</option>
+									<option value="244">Рубежный проезд (Гагаринский район)</option>
+									<option value="245">Руднева улица (Гагаринский район)</option>
+									<option value="246">Рыбацкий Причал улица (Гагаринский район)</option>
+									<option value="901">Рыбпорта Набережная (Гагаринский район)</option>
+									<option value="1153">Сапфирная улица (Гагаринский район)</option>
+									<option value="616">Сарматская улица (Гагаринский район)</option>
+									<option value="692">Скифская улица (Гагаринский район)</option>
+									<option value="947">Славянская улица (Гагаринский район)</option>
+									<option value="247">Сладкова улица (Гагаринский район)</option>
+									<option value="902">СНТ Рассвет (Гагаринский район)</option>
+									<option value="1324">СНТ Рябинушка (Гагаринский район)</option>
+									<option value="1209">СНТ Фотон (Гагаринский район)</option>
+									<option value="1001">Согласия улица (Гагаринский район)</option>
+									<option value="741">Сосновая улица (Гагаринский район)</option>
+									<option value="1180">СТ "Первомайский (Гагаринский район)</option>
+									<option value="701">СТ Автомобилист (Гагаринский район)</option>
+									<option value="995">СТ Бриз (Гагаринский район)</option>
+									<option value="964">СТ Ветеран (Гагаринский район)</option>
+									<option value="727">СТ Водоканал-2 (Гагаринский район)</option>
+									<option value="776">СТ Голубой залив (Гагаринский район)</option>
+									<option value="972">СТ Дельфин (Гагаринский район)</option>
+									<option value="1104">СТ Интернационалист (Гагаринский район)</option>
+									<option value="731">СТ Катерник (Гагаринский район)</option>
+									<option value="791">Ст Клеры-2 (Гагаринский район)</option>
+									<option value="767">СТ Клеры-3 (Гагаринский район)</option>
+									<option value="797">СТ Конус (Гагаринский район)</option>
+									<option value="755">СТ Космос (Гагаринский район)</option>
+									<option value="772">СТ Луч (Гагаринский район)</option>
+									<option value="861">СТ Медик (Гагаринский район)</option>
+									<option value="647">СТ Мечта, Фиолентовское шоссе 53А (Гагаринский район)</option>
+									<option value="853">СТ Милосердие (Гагаринский район)</option>
+									<option value="938">СТ Море (Гагаринский район)</option>
+									<option value="754">СТ Мрия (Гагаринский район)</option>
+									<option value="862">СТ Муссон (Гагаринский район)</option>
+									<option value="641">СТ Орбита, Фиолентовское шоссе (Гагаринский район)</option>
+									<option value="832">СТ Орхидея (Гагаринский район)</option>
+									<option value="762">СТ Прометей-1 (Гагаринский район)</option>
+									<option value="798">СТ Рыбак-7 (Гагаринский район)</option>
+									<option value="725">СТ Сатурн-2 (Гагаринский район)</option>
+									<option value="1058">СТ Союзстрой (Гагаринский район)</option>
+									<option value="746">СТ Старт (Гагаринский район)</option>
+									<option value="1139">Ст Строитель-3 (Гагаринский район)</option>
+									<option value="723">СТ Факел (Гагаринский район)</option>
+									<option value="748">СТ Фиолент (Гагаринский район)</option>
+									<option value="684">СТ Чайка-89 (Гагаринский район)</option>
+									<option value="923">СТ Шхуна (Гагаринский район)</option>
+									<option value="936">СТ Эдельвейс, Эдельвейсовая 4 улица (Гагаринский район)</option>
+									<option value="657">СТ Эдельвейс, Эдельвейсовая улица (Гагаринский район)</option>
+									<option value="1164">СТ Электрон (Гагаринский район)</option>
+									<option value="728">СТ Энтузиаст (Гагаринский район)</option>
+									<option value="1242">СТ Югрыбхолодфлот (Гагаринский район)</option>
+									<option value="724">СТ Ямал (Гагаринский район)</option>
+									<option value="1351">СТ Янтарь (Гагаринский район)</option>
+									<option value="248">Степаняна улица (Гагаринский район)</option>
+									<option value="249">Столетовский проспект (Гагаринский район)</option>
+									<option value="661">Стрелецкая улица (Гагаринский район)</option>
+									<option value="525">Стрелецкий проезд (Гагаринский район)</option>
+									<option value="1189">ТСН Голубой залив (Гагаринский район)</option>
+									<option value="698">ТСН Гранат (Гагаринский район)</option>
+									<option value="640">ТСН Катюша, Фиолентовское шоссе (Гагаринский район)</option>
+									<option value="831">ТСН Лукоморье (Гагаринский район)</option>
+									<option value="864">ТСН Лукоморье, Фиолентовское шоссе (Гагаринский район)</option>
+									<option value="722">ТСН Маяк-1 (Гагаринский район)</option>
+									<option value="1177">ТСН СНТ Медик-1 (Гагаринский район)</option>
+									<option value="1245">ТСН Сосновый бор (Гагаринский район)</option>
+									<option value="1298">ТСН Степной (Гагаринский район)</option>
+									<option value="251">Тульская улица (Гагаринский район)</option>
+									<option value="627">Украинки Леси улица (Гагаринский район)</option>
+									<option value="252">Ульянова Дмитрия улица (Гагаринский район)</option>
+									<option value="536">Университетская улица (Гагаринский район)</option>
+									<option value="694">Усадебная улица (Гагаринский район)</option>
+									<option value="253">Фадеева адмирала улица (Гагаринский район)</option>
+									<option value="759">Февральская улица (Гагаринский район)</option>
+									<option value="254">Фиолентовское шоссе (Гагаринский район)</option>
+									<option value="255">Чайкиной Лизы улица (Гагаринский район)</option>
+									<option value="256">Челнокова улица (Гагаринский район)</option>
+									<option value="747">Шафрановая улица (Гагаринский район)</option>
+									<option value="258">Шевченко Тараса улица (Гагаринский район)</option>
+									<option value="259">Шелкунова улица (Гагаринский район)</option>
+									<option value="345">Шостака улица (Гагаринский район)</option>
+									<option value="260">Щитовая улица (Гагаринский район)</option>
+									<option value="614">Эдельвейсовая улица (Гагаринский район)</option>
+									<option value="1273">Эдельвейсовый проезд (Гагаринский район)</option>
+									<option value="261">Юмашева адмирала улица (Гагаринский район)</option>
+									<option value="817">Юхарина балка (Гагаринский район)</option>
+									<option value="986">Яхонтовая улица (Гагаринский район)</option>
+									<option value="756"> СНТ Сапун-гора, улица Григория Куропятникова (Нахимовский район)</option>
+									<option value="877">Абазы улица (Нахимовский район)</option>
+									<option value="997">Абдуллаева старшего сержанта улица (Нахимовский район)</option>
+									<option value="950">Абызова полковника улица (Нахимовский район)</option>
+									<option value="929">Авангардное шоссе (Нахимовский район)</option>
+									<option value="735">Александера улица (Нахимовский район)</option>
+									<option value="1128">Альпийский 2 переулок (Нахимовский район)</option>
+									<option value="476">Арсенальная улица (Нахимовский район)</option>
+									<option value="71">Артдивизионовская улица (Нахимовский район)</option>
+									<option value="624">Артиллеристов улица (Нахимовский район)</option>
+									<option value="867">Асадова Эдуарда улица (Нахимовский район)</option>
+									<option value="72">Астраханская улица (Нахимовский район)</option>
+									<option value="690">Ахматовой Анны улица (Нахимовский район)</option>
+									<option value="854">Бабажанова старшины улица (Нахимовский район)</option>
+									<option value="73">Багрия улица (Нахимовский район)</option>
+									<option value="1103">Багряная улица (Нахимовский район)</option>
+									<option value="75">Бастионная 2 улица (Нахимовский район)</option>
+									<option value="76">Баумана улица (Нахимовский район)</option>
+									<option value="885">Бельбекская улица (Нахимовский район)</option>
+									<option value="1295">Береговая улица (Нахимовский район)</option>
+									<option value="479">Бирюлева улица (Нахимовский район)</option>
+									<option value="931">Богатырская улица (Нахимовский район)</option>
+									<option value="77">Богданова улица (Нахимовский район)</option>
+									<option value="1038">Бородинская улица (Нахимовский район)</option>
+									<option value="480">Брестская улица (Нахимовский район)</option>
+									<option value="1039">Брусничная улица (Нахимовский район)</option>
+									<option value="79">Брянская улица (Нахимовский район)</option>
+									<option value="80">Будищева улица (Нахимовский район)</option>
+									<option value="81">Буряка улица (Нахимовский район)</option>
+									<option value="953">Виноделов улица (Нахимовский район)</option>
+									<option value="482">Водная улица (Нахимовский район)</option>
+									<option value="1214">Водосточный переулок (Нахимовский район)</option>
+									<option value="1077">Волжская улица (Нахимовский район)</option>
+									<option value="983">Волынская улица (Нахимовский район)</option>
+									<option value="82">Воронина Матвея улица (Нахимовский район)</option>
+									<option value="589">Второй обороны улица (Нахимовский район)</option>
+									<option value="483">Гармаша Константина улица (Нахимовский район)</option>
+									<option value="83">Гвардейская улица (Нахимовский район)</option>
+									<option value="85">Героев Севастополя улица (Нахимовский район)</option>
+									<option value="1049">Голицынская улица (Нахимовский район)</option>
+									<option value="1052">Голландская 2 улица (Нахимовский район)</option>
+									<option value="932">Голландская 3 улица (Нахимовский район)</option>
+									<option value="86">Горпищенко улица (Нахимовский район)</option>
+									<option value="87">Горького улица (Нахимовский район)</option>
+									<option value="557">Госпитальный спуск (Нахимовский район)</option>
+									<option value="1133">Григорьева Николая улица (Нахимовский район)</option>
+									<option value="89">Громова улица (Нахимовский район)</option>
+									<option value="907">Гущина Алексея улица (Нахимовский район)</option>
+									<option value="1007">Деметринская улица (Нахимовский район)</option>
+									<option value="485">Дзержинского улица (Нахимовский район)</option>
+									<option value="486">Дзигунского Михаила улица (Нахимовский район)</option>
+									<option value="487">Димитрова улица (Нахимовский район)</option>
+									<option value="784">Днепровская улица (Нахимовский район)</option>
+									<option value="918">Донская улица (Нахимовский район)</option>
+									<option value="1179">Дорическая 1 улица (Нахимовский район)</option>
+									<option value="1134">Дорическая улица (Нахимовский район)</option>
+									<option value="743">Доронина улица (Нахимовский район)</option>
+									<option value="948">Дружная улица (Нахимовский район)</option>
+									<option value="859">Егерская улица (Нахимовский район)</option>
+									<option value="841">Ежевичная 4 улица (Нахимовский район)</option>
+									<option value="1100">Елисова Павла улица (Нахимовский район)</option>
+									<option value="1087">Железнодорожная улица (Нахимовский район)</option>
+									<option value="90">Жидилова генерала улица (Нахимовский район)</option>
+									<option value="91">Загордянского улица (Нахимовский район)</option>
+									<option value="609">Запорожская улица (Нахимовский район)</option>
+									<option value="93">Захарова генерала площадь (Нахимовский район)</option>
+									<option value="489">Зеленая улица (Нахимовский район)</option>
+									<option value="1348">Инженерная балка улица (Нахимовский район)</option>
+									<option value="95">Инженерная улица (Нахимовский район)</option>
+									<option value="96">Инкерманская улица (Нахимовский район)</option>
+									<option value="97">Истомина улица (Нахимовский район)</option>
+									<option value="1285">Ищенко комиссара улица (Нахимовский район)</option>
+									<option value="1222">Казанская улица (Нахимовский район)</option>
+									<option value="721">Казарского улица (Нахимовский район)</option>
+									<option value="98">Каманина улица (Нахимовский район)</option>
+									<option value="1121">Кананадзе Александра улица (Нахимовский район)</option>
+									<option value="622">Каспийская улица (Нахимовский район)</option>
+									<option value="1092">Каспийский проезд (Нахимовский район)</option>
+									<option value="1143">Качинское шоссе (Нахимовский район)</option>
+									<option value="100">Кашубы Дорофея улица (Нахимовский район)</option>
+									<option value="873">Килевая улица (Нахимовский район)</option>
+									<option value="493">Килен-балка улица (Нахимовский район)</option>
+									<option value="1018">Кирсанова летчика улица (Нахимовский район)</option>
+									<option value="1063">Кирьянова переулок (Нахимовский район)</option>
+									<option value="1080">Кисляка Николая улица (Нахимовский район)</option>
+									<option value="626">Кленовая улица (Нахимовский район)</option>
+									<option value="1068">Клубничная улица (Нахимовский район)</option>
+									<option value="101">Кокчетавская улица (Нахимовский район)</option>
+									<option value="1202">Колодкина Василия улица (Нахимовский район)</option>
+									<option value="494">Комсомольская улица (Нахимовский район)</option>
+									<option value="102">Кондукторская улица (Нахимовский район)</option>
+									<option value="104">Костромская улица (Нахимовский район)</option>
+									<option value="1203">Кошевого маршала улица (Нахимовский район)</option>
+									<option value="666">Кошубы улица (Нахимовский район)</option>
+									<option value="105">Краевой Надежды улица (Нахимовский район)</option>
+									<option value="664">Крейсерская улица (Нахимовский район)</option>
+									<option value="761">Кронштадтская улица (Нахимовский район)</option>
+									<option value="860">Кубанская улица (Нахимовский район)</option>
+									<option value="899">Курский проезд (Нахимовский район)</option>
+									<option value="107">Курчатова улица (Нахимовский район)</option>
+									<option value="1079">Лабораторное шоссе (Нахимовский район)</option>
+									<option value="497">Лазаревская улица (Нахимовский район)</option>
+									<option value="736">Ландышевая улица (Нахимовский район)</option>
+									<option value="498">Ластовая площадь (Нахимовский район)</option>
+									<option value="108">Леваневского улица (Нахимовский район)</option>
+									<option value="851">Липовенко улица (Нахимовский район)</option>
+									<option value="893">Литейная улица (Нахимовский район)</option>
+									<option value="1002">Любимовка поселок (Нахимовский район)</option>
+									<option value="110">Люксембург Розы улица (Нахимовский район)</option>
+									<option value="111">Макарова адмирала улица (Нахимовский район)</option>
+									<option value="834">Мартовская улица (Нахимовский район)</option>
+									<option value="112">Мачтовая улица (Нахимовский район)</option>
+									<option value="976">Мельника генерала переулок (Нахимовский район)</option>
+									<option value="113">Мельника генерала улица (Нахимовский район)</option>
+									<option value="551">Мельникова улица (Нахимовский район)</option>
+									<option value="1060">Менделеева улица (Нахимовский район)</option>
+									<option value="962">Металлистов улица (Нахимовский район)</option>
+									<option value="1017">Механизаторов улица (Нахимовский район)</option>
+									<option value="1044">Микрюковых братьев улица (Нахимовский район)</option>
+									<option value="1228">Мирная улица (Нахимовский район)</option>
+									<option value="115">Михайловская улица (Нахимовский район)</option>
+									<option value="503">Мореходная улица (Нахимовский район)</option>
+									<option value="1167">Морской 3 переулок (Нахимовский район)</option>
+									<option value="116">Муромская улица (Нахимовский район)</option>
+									<option value="117">Надеждинцев улица (Нахимовский район)</option>
+									<option value="1048">Народных Ополченцев улица (Нахимовский район)</option>
+									<option value="535">Некрасова улица (Нахимовский район)</option>
+									<option value="937">Нестерова улица (Нахимовский район)</option>
+									<option value="689">Облепиховая улица (Нахимовский район)</option>
+									<option value="1054">Огородная 2 улица (Нахимовский район)</option>
+									<option value="505">Одинцова улица (Нахимовский район)</option>
+									<option value="506">Окопная улица (Нахимовский район)</option>
+									<option value="774">Окружная улица (Нахимовский район)</option>
+									<option value="121">Оношко Аллы улица (Нахимовский район)</option>
+									<option value="1182">Орловская набережная (Нахимовский район)</option>
+									<option value="522">Орловская улица (Нахимовский район)</option>
+									<option value="816">Осадная улица (Нахимовский район)</option>
+									<option value="1192">Островского Николая улица (Нахимовский район)</option>
+									<option value="122">Охотская улица (Нахимовский район)</option>
+									<option value="123">Папанина улица (Нахимовский район)</option>
+									<option value="1032">Переяславская улица (Нахимовский район)</option>
+									<option value="1055">Петровский спуск (Нахимовский район)</option>
+									<option value="128">Пищенко Коли улица (Нахимовский район)</option>
+									<option value="764">Пластунская улица (Нахимовский район)</option>
+									<option value="781">Пластунский проезд (Нахимовский район)</option>
+									<option value="952">Пляж Учкуевка набережная (Нахимовский район)</option>
+									<option value="773">Пляжная улица (Нахимовский район)</option>
+									<option value="129">Победы проспект (Нахимовский район)</option>
+									<option value="132">Подольцева улица (Нахимовский район)</option>
+									<option value="949">Полетная улица (Нахимовский район)</option>
+									<option value="827">Полоцкая улица (Нахимовский район)</option>
+									<option value="681">Полтавская улица (Нахимовский район)</option>
+									<option value="1169">Прибрежная улица (Нахимовский район)</option>
+									<option value="133">Приморская улица (Нахимовский район)</option>
+									<option value="802">Приятная улица (Нахимовский район)</option>
+									<option value="977">Прутовцев улица (Нахимовский район)</option>
+									<option value="1158">Пьянзина улица (Нахимовский район)</option>
+									<option value="134">Рабочая улица (Нахимовский район)</option>
+									<option value="529">Равелинная 1 улица (Нахимовский район)</option>
+									<option value="1149">Равелинная 3 улица (Нахимовский район)</option>
+									<option value="978">Равелинная 4 улица (Нахимовский район)</option>
+									<option value="1136">Равелинная 5 улица (Нахимовский район)</option>
+									<option value="825">Равелинная 7 улица (Нахимовский район)</option>
+									<option value="1244">Радарная 12 улица (Нахимовский район)</option>
+									<option value="1151">Радарная 2 улица (Нахимовский район)</option>
+									<option value="639">Радарная 3 улица (Нахимовский район)</option>
+									<option value="900">Радарная 6 улица (Нахимовский район)</option>
+									<option value="1114">Радарное шоссе (Нахимовский район)</option>
+									<option value="1168">Радарный 1 переулок (Нахимовский район)</option>
+									<option value="514">Разина Степана спуск (Нахимовский район)</option>
+									<option value="1012">Райкунова Александра улица (Нахимовский район)</option>
+									<option value="927">Реброва Евгения улица (Нахимовский район)</option>
+									<option value="509">Ревякина улица (Нахимовский район)</option>
+									<option value="579">Рейдовая улица (Нахимовский район)</option>
+									<option value="1120">Ректорская улица (Нахимовский район)</option>
+									<option value="847">Рихтера Генерала улица (Нахимовский район)</option>
+									<option value="818">Ромашковая улица (Нахимовский район)</option>
+									<option value="564">Саймонова генерала улица (Нахимовский район)</option>
+									<option value="605">Самшитовая улица (Нахимовский район)</option>
+									<option value="717">Сарандинаки 3 улица (Нахимовский район)</option>
+									<option value="630">Себровой летчицы улица (Нахимовский район)</option>
+									<option value="513">Седова улица (Нахимовский район)</option>
+									<option value="135">Семипалатинская улица (Нахимовский район)</option>
+									<option value="136">Серафимовича улица (Нахимовский район)</option>
+									<option value="803">Силантьева улица (Нахимовский район)</option>
+									<option value="137">Симонка улица (Нахимовский район)</option>
+									<option value="870">Синопская улица (Нахимовский район)</option>
+									<option value="576">Скалистая улица (Нахимовский район)</option>
+									<option value="800">Скалистый проезд (Нахимовский район)</option>
+									<option value="868">Слепнева улица (Нахимовский район)</option>
+									<option value="945">Слесарная улица (Нахимовский район)</option>
+									<option value="1073">Смоленской Тамары улица (Нахимовский район)</option>
+									<option value="916">СНТ Дергачи-1 (Нахимовский район)</option>
+									<option value="863">СНТ Сапун-гора (Нахимовский район)</option>
+									<option value="138">Средний проезд (Нахимовский район)</option>
+									<option value="917">СТ Лабораторный (Нахимовский район)</option>
+									<option value="652">СТ Родничок, ул.Николая Кисляка (Нахимовский район)</option>
+									<option value="712">СТ Черноморец (Нахимовский район)</option>
+									<option value="993">Старосеверная Балка улица (Нахимовский район)</option>
+									<option value="744">СТСН Гавань (Нахимовский район)</option>
+									<option value="556">Танкистов улица (Нахимовский район)</option>
+									<option value="139">Тарутинская улица (Нахимовский район)</option>
+									<option value="838">Тельмана улица (Нахимовский район)</option>
+									<option value="994">Терракотовый переулок (Нахимовский район)</option>
+									<option value="1070">Тисовая улица (Нахимовский район)</option>
+									<option value="607">Томская улица (Нахимовский район)</option>
+									<option value="836">Тоннельная улица (Нахимовский район)</option>
+									<option value="806">Торопкина капитана улица (Нахимовский район)</option>
+									<option value="881">Углицкая улица (Нахимовский район)</option>
+									<option value="765">Федоринчик Александры улица (Нахимовский район)</option>
+									<option value="1004">Федоровская улица (Нахимовский район)</option>
+									<option value="930">Фильченкова улица (Нахимовский район)</option>
+									<option value="1011">Халипа Якова улица (Нахимовский район)</option>
+									<option value="515">Харченко улица (Нахимовский район)</option>
+									<option value="143">Хрулева улица (Нахимовский район)</option>
+									<option value="145">Циолковского улица (Нахимовский район)</option>
+									<option value="1091">Цыганкова улица (Нахимовский район)</option>
+									<option value="844">Чекмака Вилора улица (Нахимовский район)</option>
+									<option value="146">Челюскинцев улица (Нахимовский район)</option>
+									<option value="1349">Черемуховая улица (Нахимовский район)</option>
+									<option value="1015">Черкашина Геннадия улица (Нахимовский район)</option>
+									<option value="559">Черниговская улица (Нахимовский район)</option>
+									<option value="848">Чернышевского улица (Нахимовский район)</option>
+									<option value="147">Чехова улица (Нахимовский район)</option>
+									<option value="1067">Шевалева Владимира улица (Нахимовский район)</option>
+									<option value="1171">Энергетиков улица (Нахимовский район)</option>
+									<option value="148">Эскадренная улица (Нахимовский район)</option>
+									<option value="822">Яковлева подполковника улица (Нахимовский район)</option>
+									<option value="517">Якорная улица (Нахимовский район)</option>
+									<option value="922">Янова Виктора улица (Нахимовский район)</option>
+									<option value="262">Авдеева улица (Ленинский район)</option>
+									<option value="352">Азарова Адмирала улица (Ленинский район)</option>
+									<option value="263">Айвазовского улица (Ленинский район)</option>
+									<option value="884">Айвовый 4 переулок (Ленинский район)</option>
+									<option value="1086">Алуштинская улица (Ленинский район)</option>
+									<option value="1346">Английский бульвар (Ленинский район)</option>
+									<option value="673">Арефьева улица (Ленинский район)</option>
+									<option value="1031">Археологическая улица (Ленинский район)</option>
+									<option value="1101">Арцеулова улица (Ленинский район)</option>
+									<option value="1102">Аэродромное шоссе (Ленинский район)</option>
+									<option value="670">Аэродромный переулок (Ленинский район)</option>
+									<option value="355">Бакинский тупик (Ленинский район)</option>
+									<option value="265">Балаклавская улица (Ленинский район)</option>
+									<option value="968">Балаклавское шоссе (Ленинский район)</option>
+									<option value="611">Балканская улица (Ленинский район)</option>
+									<option value="356">Балтийская улица (Ленинский район)</option>
+									<option value="565">Бастионная 4 улица (Ленинский район)</option>
+									<option value="350">Бастионная 5 улица (Ленинский район)</option>
+									<option value="351">Бастионная 6 улица (Ленинский район)</option>
+									<option value="267">Батумская улица (Ленинский район)</option>
+									<option value="592">Батурина штурмана улица (Ленинский район)</option>
+									<option value="521">Бестужева улица (Ленинский район)</option>
+									<option value="268">Бирюзова маршала улица (Ленинский район)</option>
+									<option value="1343">Бирюзовая улица (Ленинский район)</option>
+									<option value="269">Большая Морская улица (Ленинский район)</option>
+									<option value="270">Боцманская улица (Ленинский район)</option>
+									<option value="271">Бутакова улица (Ленинский район)</option>
+									<option value="604">Ватутина улица (Ленинский район)</option>
+									<option value="272">Володарского улица (Ленинский район)</option>
+									<option value="601">Воронежская улица (Ленинский район)</option>
+									<option value="354">Воронина улица (Ленинский район)</option>
+									<option value="691">Восставших улица (Ленинский район)</option>
+									<option value="273">Гамарника Яна улица (Ленинский район)</option>
+									<option value="274">Геловани маршала улица (Ленинский район)</option>
+									<option value="583">Гидрографическая улица (Ленинский район)</option>
+									<option value="359">Гоголя улица (Ленинский район)</option>
+									<option value="1257">Годлевского улица (Ленинский район)</option>
+									<option value="276">Голубца Ивана улица (Ленинский район)</option>
+									<option value="360">Городское шоссе (Ленинский район)</option>
+									<option value="911">Гусарская улица (Ленинский район)</option>
+									<option value="891">Дачная улица (Ленинский район)</option>
+									<option value="824">Декабристов улица (Ленинский район)</option>
+									<option value="1065">Декоративный бульвар (Ленинский район)</option>
+									<option value="956">Делегатская улица (Ленинский район)</option>
+									<option value="361">Демидова улица (Ленинский район)</option>
+									<option value="966">Дерюгиной Жени улица (Ленинский район)</option>
+									<option value="872">Драгунская улица (Ленинский район)</option>
+									<option value="1135">Дубравная улица (Ленинский район)</option>
+									<option value="1042">Дунайская улица (Ленинский район)</option>
+									<option value="278">Железнякова улица (Ленинский район)</option>
+									<option value="279">Загородная Балка (Ленинский район)</option>
+									<option value="619">Изумрудная улица (Ленинский район)</option>
+									<option value="890">Индустриальная улица (Ленинский район)</option>
+									<option value="282">Карантинная улица (Ленинский район)</option>
+									<option value="283">Катерная улица (Ленинский район)</option>
+									<option value="363">Каштановая улица (Ленинский район)</option>
+									<option value="285">Керченская улица (Ленинский район)</option>
+									<option value="286">Киевская улица (Ленинский район)</option>
+									<option value="633">Кирпичная улица (Ленинский район)</option>
+									<option value="1353">Киянченко улица (Ленинский район)</option>
+									<option value="287">Клокачева адмирала набережная (Ленинский район)</option>
+									<option value="364">Ковпака улица (Ленинский район)</option>
+									<option value="289">Кожанова улица (Ленинский район)</option>
+									<option value="290">Коломийца генерала улица (Ленинский район)</option>
+									<option value="291">Коммунистическая улица (Ленинский район)</option>
+									<option value="1045">Коробкова проезд (Ленинский район)</option>
+									<option value="1145">Коробкова улица (Ленинский район)</option>
+									<option value="365">Короленко улица (Ленинский район)</option>
+									<option value="984">Косогорный переулок (Ленинский район)</option>
+									<option value="805">Котовского улица (Ленинский район)</option>
+									<option value="1190">Коцюбинского улица (Ленинский район)</option>
+									<option value="739">Кочубея улица (Ленинский район)</option>
+									<option value="292">Кошевого Олега улица (Ленинский район)</option>
+									<option value="638">Краснодарская улица (Ленинский район)</option>
+									<option value="920">Краснодарский переулок (Ленинский район)</option>
+									<option value="293">Крейзера Генерала улица (Ленинский район)</option>
+									<option value="294">Крепостной переулок (Ленинский район)</option>
+									<option value="655">Крошицкого улица (Ленинский район)</option>
+									<option value="295">Крылова Академика улица (Ленинский район)</option>
+									<option value="296">Кулакова вице-адмирала улица (Ленинский район)</option>
+									<option value="297">Куликово Поле улица (Ленинский район)</option>
+									<option value="298">Кучера Василия улица (Ленинский район)</option>
+									<option value="742">Лагерная улица (Ленинский район)</option>
+									<option value="366">Лазо Сергея улица (Ленинский район)</option>
+									<option value="299">Лебедя генерала улица (Ленинский район)</option>
+									<option value="300">Ленина улица (Ленинский район)</option>
+									<option value="1082">Ленинградская улица (Ленинский район)</option>
+									<option value="303">Ломоносова улица (Ленинский район)</option>
+									<option value="304">Лоцманская улица (Ленинский район)</option>
+									<option value="109">Лукомская улица (Ленинский район)</option>
+									<option value="367">Лумумбы Патриса улица (Ленинский район)</option>
+									<option value="305">Луначарского улица (Ленинский район)</option>
+									<option value="306">Макаренко улица (Ленинский район)</option>
+									<option value="307">Матросский переулок (Ленинский район)</option>
+									<option value="545">Матюшенко улица (Ленинский район)</option>
+									<option value="308">Маяковского улица (Ленинский район)</option>
+									<option value="309">Мечникова улица (Ленинский район)</option>
+									<option value="770">Мичманский переулок (Ленинский район)</option>
+									<option value="368">Мичурина улица (Ленинский район)</option>
+									<option value="369">Мокроусова улица (Ленинский район)</option>
+									<option value="753">Моргунова Генерала шоссе (Ленинский район)</option>
+									<option value="310">Музыки Николая улица (Ленинский район)</option>
+									<option value="715">Наваринская улица (Ленинский район)</option>
+									<option value="963">Нахимова площадь (Ленинский район)</option>
+									<option value="311">Нахимова проспект (Ленинский район)</option>
+									<option value="312">Нефедова улица (Ленинский район)</option>
+									<option value="371">Новикова-Прибоя улица (Ленинский район)</option>
+									<option value="313">Новороссийская улица (Ленинский район)</option>
+									<option value="314">Одесская улица (Ленинский район)</option>
+									<option value="315">Октябрьского адмирала улица (Ленинский район)</option>
+									<option value="796">Ониловой Нины улица (Ленинский район)</option>
+									<option value="1170">Орджоникидзе улица (Ленинский район)</option>
+									<option value="660">Оружейная улица (Ленинский район)</option>
+									<option value="358">Острякова Генерала проспект (Ленинский район)</option>
+									<option value="318">Очаковцев улица (Ленинский район)</option>
+									<option value="319">Партизанская улица (Ленинский район)</option>
+									<option value="320">Перелешина адмирала набережная (Ленинский район)</option>
+									<option value="321">Петрова Генерала улица (Ленинский район)</option>
+									<option value="349">Пионерская улица (Ленинский район)</option>
+									<option value="322">Пирогова площадь (Ленинский район)</option>
+									<option value="1043">Пирогова улица (Ленинский район)</option>
+									<option value="238">Пожарова улица (Ленинский район)</option>
+									<option value="656">Попова улица (Ленинский район)</option>
+									<option value="324">Портовая улица (Ленинский район)</option>
+									<option value="553">Привольная улица (Ленинский район)</option>
+									<option value="374">Прокопенко Галины улица (Ленинский район)</option>
+									<option value="934">Промышленная улица (Ленинский район)</option>
+									<option value="325">Пушкина улица (Ленинский район)</option>
+									<option value="375">Революции 1905 года улица (Ленинский район)</option>
+									<option value="376">Руднева улица (Ленинский район)</option>
+									<option value="1132">Ручьевая улица (Ленинский район)</option>
+									<option value="621">Рябова улица (Ленинский район)</option>
+									<option value="886">садовое товарищество Камаз (Ленинский район)</option>
+									<option value="889">Саперная улица (Ленинский район)</option>
+									<option value="1094">Сарандинаки 1 улица (Ленинский район)</option>
+									<option value="1069">Сарандинаки 4 улица (Ленинский район)</option>
+									<option value="1197">Сарандинаки улица (Ленинский район)</option>
+									<option value="327">Сафронова улица (Ленинский район)</option>
+									<option value="1088">Светлая улица (Ленинский район)</option>
+									<option value="634">Сельская улица (Ленинский район)</option>
+									<option value="328">Сенявина улица (Ленинский район)</option>
+									<option value="329">Силаева Павла улица (Ленинский район)</option>
+									<option value="330">Симферопольская улица (Ленинский район)</option>
+									<option value="1302">СНТ Надежда (Ленинский район)</option>
+									<option value="331">Советская улица (Ленинский район)</option>
+									<option value="989">Солдатская улица (Ленинский район)</option>
+									<option value="1258">СТ Бутон (Ленинский район)</option>
+									<option value="757">СТ Ветеран (Ленинский район)</option>
+									<option value="650">СТ Камаз (Ленинский район)</option>
+									<option value="651">СТ Камаз, улица Хрусталева (Ленинский район)</option>
+									<option value="845">Стахановцев улица (Ленинский район)</option>
+									<option value="969">Степовая улица (Ленинский район)</option>
+									<option value="332">Суворова улица (Ленинский район)</option>
+									<option value="333">Супруна улица (Ленинский район)</option>
+									<option value="883">Сухумская улица (Ленинский район)</option>
+									<option value="334">Терещенко улица (Ленинский район)</option>
+									<option value="378">Токарева улица (Ленинский район)</option>
+									<option value="335">Толстого Льва улица (Ленинский район)</option>
+									<option value="336">Трудовая улица (Ленинский район)</option>
+									<option value="888">Тургенева улица (Ленинский район)</option>
+									<option value="667">Урусова улица (Ленинский район)</option>
+									<option value="608">Федько Ивана улица (Ленинский район)</option>
+									<option value="577">Феодосийская улица (Ленинский район)</option>
+									<option value="339">Флагманская улица (Ленинский район)</option>
+									<option value="880">Фрегатный проезд (Ленинский район)</option>
+									<option value="1113">Хабаровская улица (Ленинский район)</option>
+									<option value="340">Харьковская улица (Ленинский район)</option>
+									<option value="341">Херсонская улица (Ленинский район)</option>
+									<option value="380">Хрусталева улица (Ленинский район)</option>
+									<option value="343">Хрюкина генерала улица (Ленинский район)</option>
+									<option value="542">Чапаева улица (Ленинский район)</option>
+									<option value="821">Частника улица (Ленинский район)</option>
+									<option value="381">Шабалина улица (Ленинский район)</option>
+									<option value="382">Шестакова спуск (Ленинский район)</option>
+									<option value="344">Шмидта улица (Ленинский район)</option>
+									<option value="869">Шукшина Василия улица (Ленинский район)</option>
+									<option value="346">Щербака улица (Ленинский район)</option>
+									<option value="347">Щорса улица (Ленинский район)</option>
+									<option value="1161">Якорная площадь (Ленинский район)</option>
+									<option value="348">Ялтинская улица (Ленинский район)</option>
+									<option value="192">Севастопольская зона ЮБК (Ласпи квартал)</option>
+									<option value="819">Красносельского улица (Верхнесадовое село)</option>
+									<option value="458">Локомотивная улица (Верхнесадовое село)</option>
+									<option value="520">Паршина улица (Верхнесадовое село)</option>
+									<option value="1137">Пирогова улица (Верхнесадовое село)</option>
+									<option value="460">Севастопольская улица (Верхнесадовое село)</option>
+									<option value="590">Титова улица (Верхнесадовое село)</option>
+									<option value="463">Авиаторов улица (Кача пгт)</option>
+									<option value="999">Глинки братьев улица (Кача пгт)</option>
+									<option value="674">ДСК Арзу (Кача пгт)</option>
+									<option value="1144">Качинское шоссе (Кача пгт)</option>
+									<option value="830">Кожедуба улица (Кача пгт)</option>
+									<option value="464">Красноармейская улица (Кача пгт)</option>
+									<option value="465">Нестерова улица (Кача пгт)</option>
+									<option value="1191">Осипенко Полины улица (Кача пгт)</option>
+									<option value="898">Первомайская улица (Кача пгт)</option>
+									<option value="750">Покрышкина улица (Кача пгт)</option>
+									<option value="1150">Рыжова Евграфа улица (Кача пгт)</option>
+									<option value="939">СТ Мираж (Кача пгт)</option>
+									<option value="466">Ударная улица (Кача пгт)</option>
+									<option value="1126">Чкалова Набережная улица (Кача пгт)</option>
+									<option value="430">Ангарская улица (Инкерман город)</option>
+									<option value="431">Георгиевская балка (Инкерман город)</option>
+									<option value="432">Зеленогорская улица (Инкерман город)</option>
+									<option value="433">Карьерная улица (Инкерман город)</option>
+									<option value="434">Каширская улица (Инкерман город)</option>
+									<option value="1106">Коломенская улица (Инкерман город)</option>
+									<option value="435">Малиновского улица (Инкерман город)</option>
+									<option value="436">Менжинского улица (Инкерман город)</option>
+									<option value="437">Мудрика улица (Инкерман город)</option>
+									<option value="593">Парижской коммуны улица (Инкерман город)</option>
+									<option value="438">Погорелова улица (Инкерман город)</option>
+									<option value="439">Раенко улица (Инкерман город)</option>
+									<option value="440">Симферопольское шоссе (Инкерман город)</option>
+									<option value="829">Скорятина улица (Инкерман город)</option>
+									<option value="441">Толбухина улица (Инкерман город)</option>
+									<option value="443">Умрихина улица (Инкерман город)</option>
+									<option value="445">Чернореченская улица (Инкерман город)</option>
+									<option value="446">Четвертакова улица (Инкерман город)</option>
+									<option value="909">Шатурская улица (Инкерман город)</option>
+									<option value="448">Шевкопляса улица (Инкерман город)</option>
+									<option value="450">Яблочкова улица (Инкерман город)</option>
+									<option value="874">Верхняя улица (Андреевка село)</option>
+									<option value="453">Качинская улица (Андреевка село)</option>
+									<option value="752">Майская улица (Андреевка село)</option>
+									<option value="454">Морская улица (Андреевка село)</option>
+									<option value="710">Объездная улица (Андреевка село)</option>
+									<option value="573">Садовая улица (Андреевка село)</option>
+									<option value="837">Усадебная улица (Андреевка село)</option>
+									<option value="59">Центральная улица (Андреевка село)</option>
+									<option value="944">Дружбы улица (Вишневое село)</option>
+									<option value="879">Качинская улица (Вишневое село)</option>
+									<option value="1157">Мира улица (Вишневое село)</option>
+									<option value="1014">Подгорная улица (Вишневое село)</option>
+									<option value="954">Гранитная улица (Гончарное село)</option>
+									<option value="1081">Дружная улица (Гончарное село)</option>
+									<option value="882">Механическая улица (Гончарное село)</option>
+									<option value="1072">Новоселов улица (Гончарное село)</option>
+									<option value="998">Подлесная улица (Гончарное село)</option>
+									<option value="720">Резервная улица (Гончарное село)</option>
+									<option value="462">ВИР улица (Дальнее село)</option>
+									<option value="908">Качинский тупик (Любимовка поселок)</option>
+									<option value="492">Качинское шоссе (Любимовка поселок)</option>
+									<option value="1138">Короткий тупик (Любимовка поселок)</option>
+									<option value="826">Никитская улица (Любимовка поселок)</option>
+									<option value="127">Перовской Софьи улица (Любимовка поселок)</option>
+									<option value="1237">Речная (Любимовка поселок)</option>
+									<option value="1236">Северный бриз (Любимовка поселок)</option>
+									<option value="142">Федоровская улица (Любимовка поселок)</option>
+									<option value="518">Южногородская улица (Любимовка поселок)</option>
+									<option value="504">Морских пехотинцев улица (Мекензиевы горы)</option>
+									<option value="516">Энергетиков улица (Мекензиевы горы)</option>
+									<option value="985">Герасина улица (Новобобровское село)</option>
+									<option value="871">Байдарский переулок (Орлиное село)</option>
+									<option value="921">Благодатная улица (Орлиное село)</option>
+									<option value="897">Вишневая улица (Орлиное село)</option>
+									<option value="1051">Коцюбы улица (Орлиное село)</option>
+									<option value="682">Ласпинская улица (Орлиное село)</option>
+									<option value="1089">Мазурца улица (Орлиное село)</option>
+									<option value="451">Пахомова Ивана улица (Орлиное село)</option>
+									<option value="846">Платановая улица (Орлиное село)</option>
+									<option value="823">Предгорная улица (Орлиное село)</option>
+									<option value="974">Степная улица (Орлиное село)</option>
+									<option value="1204">Тенистая улица (Орлиное село)</option>
+									<option value="688">Тюкова Владимира улица (Орлиное село)</option>
+									<option value="675">Цветочная улица (Орлиное село)</option>
+									<option value="491">Качинское шоссе (Орловка село)</option>
+									<option value="990">Приморская улица (Орловка село)</option>
+									<option value="1249">СТ Меркурий (Орловка село)</option>
+									<option value="943">СТ Мираж (Орловка село)</option>
+									<option value="887">СТ Чайка 3 (Орловка село)</option>
+									<option value="811">СТ Южный (Орловка село)</option>
+									<option value="981">Ветеранов улица (Осипенко село)</option>
+									<option value="467">Виноградная улица (Осипенко село)</option>
+									<option value="1213">Звездный берег (Осипенко село)</option>
+									<option value="1156">Землянского улица (Осипенко село)</option>
+									<option value="904">Камская улица (Осипенко село)</option>
+									<option value="814">Качинское шоссе (Осипенко село)</option>
+									<option value="1152">Красноярская улица (Осипенко село)</option>
+									<option value="1201">Орловская набережная (Осипенко село)</option>
+									<option value="584">СТ "Таврия" (Осипенко село)</option>
+									<option value="470">Сухий улица (Осипенко село)</option>
+									<option value="835">Грушевая улица (Павловка село)</option>
+									<option value="392">Долинная улица (Первомайка село)</option>
+									<option value="415">Разъездная улица (Первомайка село)</option>
+									<option value="428">Ясная улица (Первомайка село)</option>
+									<option value="648">Ясный переулок (Первомайка село)</option>
+									<option value="795">Водопадная улица (Передовое село)</option>
+									<option value="760">Приклубная улица (Передовое село)</option>
+									<option value="941">Прудовая улица (Передовое село)</option>
+									<option value="905">Толстого Льва улица (Пироговка село)</option>
+									<option value="979">Урожайная улица (Пироговка село)</option>
+									<option value="488">Заря Свободы улица (Поворотное село)</option>
+									<option value="842">Лесная улица (Поворотное село)</option>
+									<option value="738">Виноградная улица (Полюшко село)</option>
+									<option value="1009">Гагарина улица (Полюшко село)</option>
+									<option value="965">Евпаторийское шоссе (Полюшко село)</option>
+									<option value="1019">Зеленая улица (Полюшко село)</option>
+									<option value="910">Луговая улица (Полюшко село)</option>
+									<option value="1176">Молодежная улица (Полюшко село)</option>
+									<option value="912">Решидова улица (Полюшко село)</option>
+									<option value="714">Садовая улица (Полюшко село)</option>
+									<option value="763">Сумская улица (Полюшко село)</option>
+									<option value="992">Вишнякова Евгения улица (Резервное село)</option>
+									<option value="1071">Гончарная улица (Резервное село)</option>
+									<option value="1198">Дружный переулок (Резервное село)</option>
+									<option value="926">Королева Академика улица (Резервное село)</option>
+									<option value="1078">Заречная улица (Родниковское село)</option>
+									<option value="1160">Скитальца Степана улица (Родниковское село)</option>
+									<option value="807">Новая улица (Родное село)</option>
+									<option value="1199">Сумская (Родное село)</option>
+									<option value="1064">Запрудный переулок (Россошанка село)</option>
+									<option value="1200">Ботаническая (Сахарная головка)</option>
+									<option value="412">Нефтяная улица (Сахарная головка)</option>
+									<option value="124">Парниковая улица (Сахарная головка)</option>
+									<option value="1096">Передовая улица (Сахарная головка)</option>
+									<option value="588">Тимирязева улица (Сахарная головка)</option>
+									<option value="426">Фруктовая улица (Сахарная головка)</option>
+									<option value="471">Андреевская улица (Солнечный поселок)</option>
+									<option value="472">Ветвистая улица (Солнечный поселок)</option>
+									<option value="1224">Караизюмская улица (Солнечный поселок)</option>
+									<option value="703">Бахчисарайская улица (Терновка село)</option>
+									<option value="1061">Комсомольская улица (Терновка село)</option>
+									<option value="991">Ленина улица (Терновка село)</option>
+									<option value="533">Солнечная улица (Терновка село)</option>
+									<option value="578">Лесная улица (Тыловое село)</option>
+									<option value="452">Севастопольская улица (Тыловое село)</option>
+									<option value="1084">Пролетная улица (Флотское село)</option>
+									<option value="539">345-й Дивизии улица (Фронтовое село)</option>
+									<option value="849">Солнечная улица (Фронтовое село)</option>
+									<option value="66">Юбилейная улица (Фронтовое село)</option>
+									<option value="987">Ленина улица (Фруктовое село)</option>
+									<option value="1000">Пушкина улица (Фруктовое село)</option>
+									<option value="456">Садовая улица (Фруктовое село)</option>
+									<option value="687">Бедного Демьяна улица (Хмельницкое село)</option>
+									<option value="758">Булгакова улица (Широкое село)</option>
+									<option value="789">Приозерная улица (Широкое село)</option>
+									<option value="801">Коминтерна улица (Штурмовое село)</option>
+									<option value="787">Мераба улица (Штурмовое село)</option>
+									<option value="399">Морозова комиссара улица (Штурмовое село)</option>
+									<option value="1178">Поворотный тупик (Штурмовое село)</option>
+									<option value="1234">Полезное шоссе (Штурмовое село)</option>
+									<option value="1166">Шулинская улица (Штурмовое село)</option>
+								</select>
+								<div class="chosen-container chosen-container-multi select-designed w25p" title="" id="street_id_chosen"
+									style="width: 172px;">
+									<ul class="chosen-choices">
+										<li class="search-field">
+											<input class="chosen-search-input default" type="text" autocomplete="off"
+												value="Выберите улицу ..." style="width: 138px;">
+										</li>
+									</ul>
+									<div class="chosen-drop">
+										<ul class="chosen-results"></ul>
+									</div>
+								</div>
+								<select multiple="" name="house_id[]" id="house_id" class="select-designed w25p"
+									data-placeholder="Выберите дом ..." style="display: none;">
+									<option value="NULL"></option>
+								</select>
+								<div class="chosen-container chosen-container-multi select-designed w25p" title="" id="house_id_chosen"
+									style="width: 172px;">
+									<ul class="chosen-choices">
+										<li class="search-field">
+											<input class="chosen-search-input default" type="text" autocomplete="off" value="Выберите дом ..."
+												style="width: 127px;">
+										</li>
+									</ul>
+									<div class="chosen-drop">
+										<ul class="chosen-results"></ul>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="roomlayout_id">Расположение комнат:</label>
+							<select multiple="" name="roomlayout_id[]" id="roomlayout_id" class="select-designed w-full"
+								data-placeholder="Выберите расположение комнат ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="6">кухня-студия</option>
+								<option value="8">кухня-студия и раздельные комнаты</option>
+								<option value="9">кухня-студия и смежные комнаты</option>
+								<option value="1">раздельные</option>
+								<option value="7">свободная планировка</option>
+								<option value="5">смежно-раздельные</option>
+								<option value="4">смежные</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="roomlayout_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите расположение комнат ..." style="width: 213px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="wallmaterial_id">Материал:</label>
+							<select multiple="" name="wallmaterial_id[]" id="wallmaterial_id" class="select-designed w-full"
+								data-placeholder="Выберите материал стен ..." style="display: none;">
+								<option value="NULL"></option>
+								<option value="20">Бутовый камень</option>
+								<option value="21">Дерево</option>
+								<option value="1">Инкерманские блоки</option>
+								<option value="11">Инкерманский камень</option>
+								<option value="3">Кирпич</option>
+								<option value="9">Монолит</option>
+								<option value="15">Монолит-газобетон</option>
+								<option value="14">Монолит-кирпич</option>
+								<option value="16">Монолит-ракушечник</option>
+								<option value="2">Панели</option>
+								<option value="22">СИП панели</option>
+							</select>
+							<div class="chosen-container chosen-container-multi select-designed w-full" title=""
+								id="wallmaterial_id_chosen" style="width: 223px;">
+								<ul class="chosen-choices">
+									<li class="search-field">
+										<input class="chosen-search-input default" type="text" autocomplete="off"
+											value="Выберите материал стен ..." style="width: 189px;">
+									</li>
+								</ul>
+								<div class="chosen-drop">
+									<ul class="chosen-results"></ul>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label class="group-label">Год постройки:</label>
+							<div class="group-controls inline-group">
+								<label for="house_year_lo" class="controls-label">от</label>
+								<input name="house_year_lo" id="house_year_lo" type="text" class="w40" value="">
+								<label for="house_year_hi" class="controls-label">до</label>
+								<input name="house_year_hi" id="house_year_hi" type="text" class="w40" value="">
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label for="obj_id">ID:</label>
+							<input name="obj_id" id="obj_id" type="text" class="w60" value="">
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label>S<sub>жилая</sub> (м<sup>2</sup>):</label>
+							<div class="group-controls inline-group">
+								<label for="obj_square_living_lo" class="controls-label">от</label>
+								<input name="obj_square_living_lo" id="obj_square_living_lo" type="text" class="w60" value="">
+								<label for="obj_square_living_hi" class="controls-label">до</label>
+								<input name="obj_square_living_hi" id="obj_square_living_hi" type="text" class="w60" value="">
+							</div>
+						</fieldset>
+						<fieldset class="default-flex-fieldset w1of3">
+							<label>S<sub>кухни</sub> (м<sup>2</sup>):</label>
+							<div class="group-controls inline-group">
+								<label for="obj_kitchen_square_lo" class="controls-label">от</label>
+								<input name="obj_kitchen_square_lo" id="obj_kitchen_square_lo" type="text" class="w60" value="">
+								<label for="obj_kitchen_square_hi" class="controls-label">до</label>
+								<input name="obj_kitchen_square_hi" id="obj_kitchen_square_hi" type="text" class="w60" value="">
+							</div>
+						</fieldset>
+						<fieldset class="default-checkbox default-flex-fieldset w1of3">
+							<label for="obj_with_view">
+								<input type="checkbox" name="obj_with_view" id="obj_with_view" class="smalltext form-control">
+								<span>Видовая</span>
+							</label>
+						</fieldset>
+						<fieldset class="default-checkbox default-flex-fieldset w1of3">
+							<label for="obj_mortgage">
+								<input type="checkbox" name="obj_mortgage" id="obj_mortgage" class="w-full">
+								<span>Ипотека</span>
+							</label>
+						</fieldset>
+						<fieldset class="default-checkbox default-flex-fieldset w1of3">
+							<label for="obj_capital">
+								<input type="checkbox" name="obj_capital" id="obj_capital" class="w-full">
+								<span>Мат. капитал</span>
+							</label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="form-buttons flex-columns center-content">
+					<input type="submit" value="Искать" class="form-button submit">
+					<input type="button" id="searchform_clear" value="Сбросить фильтры" class="form-button">
+					<a href="#" class="search-mode ext-search" data-target="searchform">
+						<span class="search-mode-text ext-search-text">Расширенный поиск</span>
+						<span class="search-mode-text standart-search-text">Краткий поиск</span>
+					</a>
+				</div>
+			</form>
+
+		</div>
+		<div class="promoted">
+			<!--SLIDER WITH OBJECTS-->
+			<h2>Наиболее поплуярные:</h2>
+			<br>
+			<a href="#" class="object-card">
+				<img src="img/big32.jpg" alt="PHOTO">
+				<div class="obj_data">
+					<h2>Просторный 3-х комнатный апартамент на первой линии </h2>
+					<p>Adress: Святой Влас, район, комплекс</p>
+					<p>Update date: 19.02.2023</p>
+					<span class="price">60 000 лв</span>
+				</div>
+			</a>
+			<a href="#" class="object-card">
+				<img src="img/big32.jpg" alt="PHOTO">
+				<div class="obj_data">
+					<h2>3-к квартира в Севастополе, 55.00 м², 1/3 эт., Ленинский район </h2>
+					<p>Adress: Святой Влас, район, комплекс</p>
+					<p>Update date: 19.02.2023</p>
+					<span class="price">60 000 лв</span>
+				</div>
+			</a>
+			<a href="#" class="object-card">
+				<img src="img/big32.jpg" alt="PHOTO">
+				<div class="obj_data">
+					<h2>Просторный 3-х комнатный апартамент на первой линии </h2>
+					<p>Adress: Святой Влас, район, комплекс</p>
+					<p>Update date: 19.02.2023</p>
+					<span class="price">60 000 лв</span>
+				</div>
+			</a>
+			<a href="#" class="object-card">
+				<img src="img/big32.jpg" alt="PHOTO">
+				<div class="obj_data">
+					<h2>Просторный 3-х комнатный апартамент на первой линии </h2>
+					<p>Adress: Святой Влас, район, комплекс</p>
+					<p>Update date: 19.02.2023</p>
+					<span class="price">60 000 лв</span>
+				</div>
+			</a>
+			<a href="#" class="object-card">
+				<img src="img/big32.jpg" alt="PHOTO">
+				<div class="obj_data">
+					<h2>Просторный 3-х комнатный апартамент на первой линии </h2>
+					<p>Adress: Святой Влас, район, комплекс</p>
+					<p>Update date: 19.02.2023</p>
+					<span class="price">60 000 лв</span>
+				</div>
+			</a>
+		</div>
+	</main>
+	<footer>
+		Copyright 2023. All rights reserved.
+		<ul>
+			<li><a href="#">Далеко-далеко, за словесными.</a></li>
+			<li><a href="#">Журчит, себя необходимыми!</a></li>
+			<li><a href="#">Все, пунктуация подзаголовок.</a></li>
+			<li><a href="#">До, вопроса вдали!</a></li>
+			<li><a href="#">Большой, переулка сих!</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
