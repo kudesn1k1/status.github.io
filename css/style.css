@@ -2,6 +2,8 @@
 	text-decoration: none;
 }
 
+
+
 body {
 	font-family: Glober, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	width: 100%;
@@ -60,7 +62,7 @@ nav a:hover {
 
 .navbar {
 	width: 10vw;
-	box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+	/* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
 	display: none;
 }
 
@@ -127,7 +129,7 @@ nav a:hover {
 	height: 4px;
 	width: 100%;
 	border-radius: 10px;
-	background: #0e2431;
+	background: rgb(240, 184, 36);
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -186,6 +188,10 @@ nav a:hover {
 
 .nav-container input[type="checkbox"]:checked~.logo {
 	display: none;
+}
+
+.nav-container input[type="checkbox"]:checked~html {
+	overflow-y: hidden;
 }
 
 .logo {
@@ -360,12 +366,15 @@ footer ul {
 	}
 
 	header {
+		width: 100%;
 		justify-content: space-between;
 		padding: 10px;
 		position: -webkit-sticky;
 		/* Safari */
-		position: sticky;
+		position: fixed;
 		top: 0px;
+		left: 0;
+		z-index: 10;
 	}
 
 	.only_logo {
