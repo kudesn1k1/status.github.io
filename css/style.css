@@ -20,9 +20,16 @@ header {
 
 .phone_number {
 	text-decoration: none;
-	color: #e8e9f3;
+	color: #fff;
 	font-size: 2rem;
 	align-self: center;
+	display: flex;
+	align-items: center;
+}
+
+.phone_number img {
+	height: 2.5rem;
+	margin-right: 0.7rem;
 }
 
 nav {
@@ -148,7 +155,8 @@ nav a:hover {
 .navbar .menu-items {
 	padding-top: 120px;
 	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-	height: 100vh;
+	/* height: 100vh; */
+	height: calc(100vh - 120px);
 	width: 100vw;
 	transform: translate(20vw);
 	display: flex;
@@ -165,6 +173,19 @@ nav a:hover {
 	font-weight: 500;
 }
 
+.tel {
+	display: flex;
+	margin-top: auto;
+	margin-bottom: 2rem;
+	font-size: 1.5rem !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.tel img {
+	height: 1.5rem;
+	margin-right: 0.6rem;
+}
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
 	transform: translateX(-100vw);
