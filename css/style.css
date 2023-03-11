@@ -6,8 +6,8 @@ body {
 	font-family: Glober, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	width: 100%;
 	margin: 0;
-	/* background-color: #cecece; */
-	background-color: #e8e9f3;
+	background-color: #f3f4f4;
+	/* background-color: #e8e9f3; */
 }
 
 header {
@@ -167,7 +167,7 @@ nav a:hover {
 
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
-	transform: translateX(-95vw);
+	transform: translateX(-100vw);
 }
 
 .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
@@ -253,38 +253,40 @@ main {
 }
 
 .promoted {
-	border: rgb(75, 75, 75) solid 1px;
+	/* border: rgb(75, 75, 75) solid 1px; */
 	border-radius: 10px;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, .3);
 	width: 75%;
 	margin-left: 23%;
-	/* background-color: rgb(115, 115, 115); */
+	padding: 5px;
 	background-color: rgb(73, 76, 83);
+	/* background-color: #fff; */
 }
 
 .promoted>h2 {
 	display: block;
 	width: 100%;
 	margin-left: 2.5%;
-	color: #e8e9f3;
+	color: #fff;
 }
 
 .object-card {
-	display: block;
-	border: solid 1px #000;
+	display: flex;
 	height: auto;
 	max-width: 95%;
-	margin: 10px auto;
+	margin: 15px auto;
 	border-radius: 15px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	color: #000;
-	background-color: #e8e9f3;
+	background-color: #fff;
+	/* box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); */
 }
 
 .obj_data {
 	display: flex;
 	flex-direction: column;
-	padding: 5px;
+	position: relative;
+	flex-basis: 100%;
 }
 
 .object-card img {
@@ -292,29 +294,45 @@ main {
 	height: auto;
 	width: 35%;
 	margin-right: 30px;
+	border-radius: 15px 0 0 15px;
 }
 
 .object-card p,
 .object-card h2 {
 	padding: 0 3px;
-	margin: 0.6rem 0;
+	margin: 0.7rem 0;
 }
 
 .price {
-	padding: 0 20px 10px 0;
+	padding: 5px;
 	font-size: 1.3em;
-	color: rgb(255, 0, 34);
-	align-self: flex-end;
-	position: relative;
-	top: -10px;
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	right: -10px;
+	display: block;
+	font-weight: 600;
+	background-color: rgba(220, 163, 15, 0.9);
+	transition: 0.15s;
+	border-radius: 3px;
+}
+
+.price:hover {
+	transform: scale(1.1);
 }
 
 footer {
 	background-color: rgb(48, 48, 48);
 	color: white;
 	text-align: center;
-	margin: 20px 0 0 0;
-	padding: 30px 0;
+	margin: 40px 0 0 0;
+	padding: 20px 0;
+}
+
+footer hr {
+	width: 75%;
+	color: rgb(108, 108, 108);
+	margin-bottom: 1.5em;
 }
 
 /* footer ul {
@@ -377,6 +395,7 @@ footer a {
 	.object-card img {
 		width: 100%;
 		height: auto;
+		border-radius: 15px 15px 0 0;
 	}
 }
 
